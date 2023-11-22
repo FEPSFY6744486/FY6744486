@@ -208,6 +208,18 @@ Wilberforce et al, (2017)</a>
 function prevSlide() {
     currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
     showSlide();
+ 
+  // Function to show a specific slide based on the button clicked 
+  function showSlideNumber(slideNumber) {
+    currentSlide = slideNumber - 1;
+  }
+  
+  // Call showSlide() to display the first slide
+  showSlide();
+  </script>
+
+  <div id="slide-container">
+    <img id="slide" scr="Slide1
 
     
 <p id="date&time"></p>
