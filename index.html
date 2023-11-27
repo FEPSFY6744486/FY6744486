@@ -195,7 +195,7 @@ Wilberforce et al, (2017)</a>
 
 <h2>Why hydrogen cars aren't the future, for now </h2>     
 <script> 
-//Array of slide iamage URLs
+
   var slideImages = ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
   var currectSlide = 0;
   function showSlide() {
@@ -209,12 +209,11 @@ function prevSlide() {
     currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
     showSlide();
  
-  // Function to show a specific slide based on the button clicked 
+ 
   function showSlideNumber(slideNumber) {
     currentSlide = slideNumber - 1;
   }
   
-  // Call showSlide() to display the first slide
   showSlide();
   </script>
 
@@ -264,11 +263,3 @@ function prevSlide() {
   }
     
 </style>
-
-    
-<p id="date&time"></p>
-<script>
-//Javascript to display the date and time on my webpage
-const d = new Date();
-document.getElementById("date&time").innerHTML = d;
-</script>
