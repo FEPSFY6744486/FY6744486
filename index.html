@@ -211,16 +211,21 @@ function prevSlide() {
  
 }
   function showSlideNumber(slideNumber) {
-    currentSlide = slideNumber - 1
+    currentSlide = slideNumber - 1;
     showSlide();
   }
-  
+    showSlide();
   </script>
 
   <div id="slide-container">
-    <img id="slide" scr="Slide1" style="width:100%; max-width:800px;">
+    <img id="slide" scr="Slide1.JPG", alt="Slide 1" style="width:100%; max-width:800px;">
 
     <!-- Slide number buttons container -->
+    <div class="button-container">
+      <button class="button" onclick="prevSlide()">Previous</button>
+      <button class="button" onclick="nextSlide()">Next</button>
+    </div> 
+    
     <div class="slide-number-container">
       <button class="button" onclick="showSlideNumber(1)">1</button> 
       <button class="button" onclick="showSlideNumber(2)">2</button>
@@ -237,7 +242,7 @@ function prevSlide() {
   /* Style for the buttons */
   .button-container {
     position: absolute;
-    bottam: 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: -100px; /* Add some margin between the image and buttons */
@@ -259,7 +264,7 @@ function prevSlide() {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: -50%; /* Add some margin between the slide number buttons and the image */
+    margin-bottom: -50px; /* Add some margin between the slide number buttons and the image */
   }
     
 </style>
