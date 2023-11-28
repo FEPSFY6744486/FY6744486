@@ -193,45 +193,50 @@ Wilberforce et al, (2017)</a>
       <img src="Picture1.png" alt="Banner" width="850" height="400">
                <h5> <td><a href="#Figure 2">Figure 2</td></h5>
 
-<h2>Why hydrogen cars aren't the future, for now </h2>     
-<script> 
+<h2>Why hydrogen cars aren't the future, for now</h2>
 
-  var slideImages = ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
+<script>
+  var slideImages = ["Slide1.jpg", "Slide2.jpg", "Slide3.jpg", "Slide4.jpg", "Slide5.jpg"];
   var currentSlide = 0;
+
   function showSlide() {
     document.getElementById('slide').src = slideImages[currentSlide];
   }
+
   function nextSlide() {
     currentSlide = (currentSlide + 1) % slideImages.length;
     showSlide();
   }
-function prevSlide() {
+
+  function prevSlide() {
     currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
     showSlide();
- 
-}
+  }
+
   function showSlideNumber(slideNumber) {
     currentSlide = slideNumber - 1;
     showSlide();
   }
-    showSlide();
-  </script>
 
-  <div id="slide-container">
-    <img id="slide" src="Slide1.JPG", alt="Slide 1" style="width:100%; max-width:800px;">
+  showSlide();
+</script>
 
-    <!-- Slide number buttons container -->
-    <div class="button-container">
-      <button class="button" onclick="prevSlide()">Previous</button>
-      <button class="button" onclick="nextSlide()">Next</button>
-    </div> 
-    
-    <div class="slide-number-container">
-      <button class="button" onclick="showSlideNumber(1)">1</button> 
-      <button class="button" onclick="showSlideNumber(2)">2</button>
-      <button class="button" onclick="showSlideNumber(3)">3</button>
-      <button class="button" onclick="showSlideNumber(4)">4</button>
-    </div>
+<div id="slide-container">
+  <img id="slide" src="Slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
+
+  <!-- Slide number buttons container -->
+  <div class="button-container">
+    <button class="button" onclick="prevSlide()">Previous</button>
+    <button class="button" onclick="nextSlide()">Next</button>
+  </div>
+
+  <div class="slide-number-container">
+    <button class="button" onclick="showSlideNumber(1)">1</button>
+    <button class="button" onclick="showSlideNumber(2)">2</button>
+    <button class="button" onclick="showSlideNumber(3)">3</button>
+    <button class="button" onclick="showSlideNumber(4)">4</button>
+  </div>
+</div>
 
 <style>
   /* Style to center the image */
@@ -239,6 +244,7 @@ function prevSlide() {
     text-align: center;
     position: relative;
   }
+
   /* Style for the buttons */
   .button-container {
     position: absolute;
@@ -253,12 +259,12 @@ function prevSlide() {
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     margin: 0 5px; /* Add some margin between the buttons */
   }
-  
+
   .slide-number-container {
     position: absolute;
     bottom: 0;
@@ -266,5 +272,5 @@ function prevSlide() {
     transform: translateX(-50%);
     margin-bottom: -50px; /* Add some margin between the slide number buttons and the image */
   }
-    
 </style>
+
