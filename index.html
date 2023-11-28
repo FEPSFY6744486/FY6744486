@@ -197,9 +197,9 @@ Wilberforce et al, (2017)</a>
 <script> 
 
   var slideImages = ["Slide1.jpg","Slide2.jpg","Slide3.jpg","Slide4.jpg","Slide5.jpg"];
-  var currectSlide = 0;
+  var currentSlide = 0;
   function showSlide() {
-    document.getElementById('slide').scr = slideImages[currentSlide];
+    document.getElementById('slide').src = slideImages[currentSlide];
   }
   function nextSlide() {
     currentSlide = (currentSlide + 1) % slideImages.length;
